@@ -1,0 +1,151 @@
+<html>
+<head>
+  <title>💖 Media and Information Literacy 💖</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    body {
+      background: linear-gradient(120deg, #FFD6E0, #FFF1F5, #FFE4EC);
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+      position: relative;
+      animation: bgMove 15s ease-in-out infinite alternate;
+    }
+
+    @keyframes bgMove {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+
+    h1 {
+      color: #C71585;
+      text-shadow: 0 0 10px #FFB6C1, 0 0 20px #FF99AA;
+      font-size: 2.5em;
+      animation: titleGlow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes titleGlow {
+      from { text-shadow: 0 0 8px #FFB6C1, 0 0 15px #FF99AA; }
+      to { text-shadow: 0 0 20px #FF8DAA, 0 0 35px #FFB7CE; }
+    }
+
+    table {
+      border-radius: 25px;
+      overflow: hidden;
+      border: 5px solid #FFB6C1;
+      box-shadow: 0 8px 25px rgba(255, 182, 193, 0.7);
+      background: rgba(255, 240, 245, 0.9);
+      backdrop-filter: blur(12px);
+    }
+
+    td:first-child {
+      background: linear-gradient(180deg, #FFB6C1, #FF99AA);
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+      padding: 20px;
+    }
+
+    h2 {
+      color: white;
+      text-shadow: 0 0 10px #FF69B4;
+      animation: bounce 3s infinite;
+      letter-spacing: 1px;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+
+    a {
+      color: #8B004F;
+      text-decoration: none;
+      display: inline-block;
+      font-weight: bold;
+      font-size: 1em;
+      transition: 0.3s;
+      background: linear-gradient(90deg, #FFEAF0, #FFD6E0);
+      padding: 10px 20px;
+      border-radius: 30px;
+      box-shadow: 0 2px 10px rgba(255,182,193,0.6);
+      margin: 10px 0;
+      border: 2px solid #FFB6C1;
+    }
+
+    a:hover {
+      color: #FF4081;
+      background: linear-gradient(90deg, #FFC0CB, #FFB7CE);
+      transform: scale(1.1) rotate(1deg);
+      box-shadow: 0 0 20px #FF99AA;
+    }
+
+    iframe {
+      border: 4px solid #FF9BB3;
+      border-radius: 25px;
+      box-shadow: 0 0 15px #FFB6C1;
+      background-color: white;
+      animation: frameGlow 4s ease-in-out infinite alternate;
+    }
+
+    @keyframes frameGlow {
+      from { box-shadow: 0 0 10px #FFB6C1; }
+      to { box-shadow: 0 0 30px #FF8DAA; }
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <h1>💗 Media and Information Literacy 💗</h1>
+  </center>
+
+  <table width="95%" height="750" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+      <!-- Sidebar -->
+      <td width="18%" valign="top">
+        <center>
+          <h2>📘 Table of Contents</h2>
+          <div style="background-color:#FFD6E0; padding:20px; border-radius:20px; width:85%; box-shadow:0 0 10px #FFB6C1;">
+            <p>
+              <a href="group11.pdf" target="lessonframe" onclick="changeTopic('Introduction to Information and Communication Technology')">Group 1</a><br>
+              <a href="group21.pdf" target="lessonframe" onclick="changeTopic('Rules of Netiquette')">Group 2</a><br>
+              <a href="group31.pdf" target="lessonframe" onclick="changeTopic('Imaging and Design for Online Environment')">Group 3</a><br>
+              <a href="group41.pdf" target="lessonframe" onclick="changeTopic('Online Platforms for ICT Content')">Group 4</a><br>
+              <a href="group51.pdf" target="lessonframe" onclick="changeTopic('Collaborative Development')">Group 5</a><br>
+              <a href="group61.pdf" target="lessonframe" onclick="changeTopic('Interactive Multimedia')">Group 6</a><br>
+              <a href="group71.pdf" target="lessonframe" onclick="changeTopic('ICT as a Platform for Change')">Group 7</a><br>
+              <a href="group81.pdf" target="lessonframe" onclick="changeTopic('ICT Project for Social Change')">Group 8</a><br>
+              <a href="group91.pdf" target="lessonframe" onclick="changeTopic('ICT Project Publication and Statistics')">Group 9</a><br>
+              <a href="group101.pdf" target="lessonframe" onclick="changeTopic('ICT Project Maintenance')">Group 10</a><br>
+              <a href="group111.pdf" target="lessonframe" onclick="changeTopic('The Disadvatage of ICT')">Group 11</a><br>
+	      <a href="group112.pdf" target="lessonframe" onclick="changeTopic('The Disadvatage of ICT')">Group 12</a><br>
+            </p>
+          </div>
+        </center>
+      </td>
+
+      <!-- Main content -->
+      <td width="82%" style="padding:25px;">
+        <center>
+          <h2 id="topicTitle" style="
+            color:#C71585;
+            text-shadow:0 0 10px #FF99AA;
+            font-size:1.8em;
+            margin-bottom:15px;
+            animation:bounce 3s infinite;">
+            🌐 MIL Topics 🌐
+          </h2>
+        </center>
+
+        <iframe name="lessonframe" width="100%" height="700"></iframe>
+      </td>
+    </tr>
+  </table>
+
+  <script>
+    function changeTopic(title) {
+      document.getElementById('topicTitle').innerText = "🌐 " + title + " 🌐";
+    }
+  </script>
+</body>
+</html>
