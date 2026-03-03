@@ -1,0 +1,212 @@
+<html>
+<head>
+  <title>IHMA Home Page</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    /* 🌸 Background animation */
+    body {
+      background: linear-gradient(135deg, #FFE9F0, #FFD6E0, #FFF1F5);
+      background-size: 400% 400%;
+      animation: moveGradient 12s ease-in-out infinite;
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+    }
+
+    @keyframes moveGradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      color: #B3005E;
+      text-shadow: 2px 2px 6px #FFD1E1;
+      margin-top: 40px;
+      animation: fadeDown 1.5s ease-in-out;
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .container {
+      background: rgba(255, 230, 239, 0.8);
+      backdrop-filter: blur(8px);
+      padding: 30px;
+      width: 85%;
+      border-radius: 30px;
+      margin-top: 25px;
+      box-shadow: 0 4px 20px rgba(255,182,193,0.4);
+      animation: fadeUp 1.5s ease-in-out;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      color: #8B004F;
+      text-shadow: 1px 1px 4px #FFB6C1;
+    }
+
+    /* 💖 Cards */
+    .card {
+      background-color: white;
+      padding: 25px;
+      margin: 15px;
+      border-radius: 20px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      border: 2px solid #FFB6C1;
+      transition: 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      transform: scale(1.04);
+      box-shadow: 0 6px 14px rgba(255, 182, 193, 0.6);
+    }
+
+    .card::before {
+      content: "✨";
+      position: absolute;
+      top: -10px;
+      right: 10px;
+      font-size: 25px;
+      opacity: 0;
+      transition: 0.4s;
+    }
+
+    .card:hover::before {
+      opacity: 1;
+      transform: rotate(15deg);
+    }
+
+    h3 {
+      color: #D63384;
+    }
+
+    p {
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* 🌈 Divider line */
+    .divider {
+      height: 4px;
+      width: 80%;
+      margin: 20px auto;
+      border-radius: 50px;
+      background: linear-gradient(to right, #FFB6C1, #FF99AA, #FFC0CB);
+      animation: shimmer 3s linear infinite;
+    }
+
+    @keyframes shimmer {
+      0% { background-position: -100px; }
+      100% { background-position: 200px; }
+    }
+
+    /* 💕 Floating Hearts */
+    .hearts span {
+      position: absolute;
+      color: #FF99AA;
+      font-size: 20px;
+      animation: float 6s linear infinite;
+      opacity: 0.6;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0) rotate(0deg); opacity: 0.8; }
+      100% { transform: translateY(-800px) rotate(360deg); opacity: 0; }
+    }
+
+    /* 🌟 Sparkles */
+    .sparkle {
+      position: absolute;
+      color: #FFD6E0;
+      font-size: 14px;
+      animation: sparkleMove 4s linear infinite;
+    }
+
+    @keyframes sparkleMove {
+      from { transform: translateY(0) scale(1); opacity: 1; }
+      to { transform: translateY(-400px) scale(0.5); opacity: 0; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Floating hearts and sparkles -->
+  <div class="hearts">
+    <span style="left:10%;">💖</span>
+    <span style="left:30%;">💗</span>
+    <span style="left:50%;">💞</span>
+    <span style="left:70%;">💘</span>
+    <span style="left:90%;">💝</span>
+  </div>
+
+  <div class="sparkles">
+    <span class="sparkle" style="left:25%;">✨</span>
+    <span class="sparkle" style="left:45%;">💫</span>
+    <span class="sparkle" style="left:65%;">🌸</span>
+  </div>
+
+  <center>
+    <h1>🌸 Welcome to the IHMA Home Page 🌸</h1>
+
+    <div class="divider"></div>
+
+    <div class="container">
+      <h2>💖 Our School, Our Home 💖</h2>
+
+      <div class="card">
+        <h3>🎯 Mission</h3>
+        <p>
+          To create and maintain a student-centered learning environment where teaching and learning 
+          are purpose-driven, and students are assisted towards developing personal and social responsibility.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🌷 Vision</h3>
+        <p>
+          A Marian educational institution committed to a holistic education experience, enabling and inspiring 
+          students to lead lives of choice, purpose, and service.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>💐 Core Values</h3>
+        <p>
+          D - iscipline 💪<br>
+          M - agnanimity 💝<br>
+          A - ttentiveness 👀<br>
+          I - ntegrity 🌟<br>
+          A - ltruism 🤍<br>
+          N - ationalism 🇵🇭
+        </p>
+      </div>
+    </div>
+  </center>
+
+  <!-- Floating heart animation script -->
+  <script>
+    const hearts = document.querySelector('.hearts');
+    setInterval(() => {
+      const heart = document.createElement('span');
+      heart.textContent = ['💖','💗','💞','💘','💝'][Math.floor(Math.random()*5)];
+      heart.style.left = Math.random() * 100 + '%';
+      heart.style.fontSize = Math.random() * 20 + 10 + 'px';
+      hearts.appendChild(heart);
+      setTimeout(() => heart.remove(), 6000);
+    }, 1000);
+  </script>
+
+</body>
+</html>

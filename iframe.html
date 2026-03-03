@@ -1,0 +1,205 @@
+<html>
+<head>
+  <title>IHMA Webpage</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    /* 🌸 Background Animation */
+    body {
+      background: linear-gradient(135deg, #FFD6E0, #FFF1F5, #FFE4EC);
+      background-size: 400% 400%;
+      animation: gradientMove 15s ease infinite;
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* 🎀 Magical Header Ribbon */
+    .header {
+      background: rgba(255, 192, 203, 0.3);
+      backdrop-filter: blur(8px);
+      padding: 15px;
+      border-radius: 0 0 30px 30px;
+      box-shadow: 0 4px 20px rgba(255, 182, 193, 0.5);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .header h1 {
+      color: #C71585;
+      text-shadow: 1px 1px 8px #FFC0CB;
+      letter-spacing: 2px;
+      font-size: 28px;
+      margin: 10px 0;
+    }
+
+    /* ✨ Sparkle Divider */
+    .sparkle-divider {
+      width: 90%;
+      height: 4px;
+      background: linear-gradient(to right, #FFB6C1, #FFC0CB, #FF99AA, #FFB6C1);
+      border-radius: 50px;
+      margin: 10px auto;
+      position: relative;
+      overflow: hidden;
+      animation: shimmer 3s linear infinite;
+    }
+
+    @keyframes shimmer {
+      0% { background-position: -100px; }
+      100% { background-position: 200px; }
+    }
+
+    /* 🎀 Buttons Table */
+    table {
+      border-collapse: separate;
+      border-spacing: 10px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    td {
+      text-align: center;
+      padding: 14px 28px;
+      border-radius: 20px;
+      background: linear-gradient(to right, #FFC0CB, #FFB6C1);
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+
+    td:hover {
+      transform: scale(1.08);
+      box-shadow: 0 6px 12px rgba(255, 182, 193, 0.6);
+      background: linear-gradient(to right, #FFB6C1, #FF99AA);
+    }
+
+    a {
+      text-decoration: none;
+      color: #8B004F;
+      font-weight: 600;
+      font-size: 16px;
+      letter-spacing: 0.5px;
+      transition: 0.3s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    a:hover {
+      color: #FF1F75;
+      text-shadow: 0 0 8px #FFC0CB;
+    }
+
+    /* 💖 Frame Styling */
+    iframe {
+      border: 4px solid #FF9BB3;
+      border-radius: 25px;
+      width: 1000px;
+      height: 520px;
+      margin-top: 15px;
+      box-shadow: 0 0 20px #FFB6C1;
+      animation: glow 4s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from { box-shadow: 0 0 8px #FFB6C1; }
+      to { box-shadow: 0 0 25px #FF8DAA; }
+    }
+
+    /* 💕 Floating Hearts Animation */
+    .hearts span {
+      position: absolute;
+      color: #FF99AA;
+      font-size: 20px;
+      animation: float 6s linear infinite;
+      opacity: 0.6;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0) rotate(0deg); opacity: 0.8; }
+      100% { transform: translateY(-800px) rotate(360deg); opacity: 0; }
+    }
+
+    /* Fade Animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Floating hearts -->
+  <div class="hearts">
+    <span style="left:10%;">💖</span>
+    <span style="left:30%;">💗</span>
+    <span style="left:50%;">💞</span>
+    <span style="left:70%;">💘</span>
+    <span style="left:90%;">💝</span>
+  </div>
+
+  <!-- 💕 Magical Header -->
+  <div class="header">
+    <center>
+      <h1>🌸 IHMA EMTECH ACTIVITIES 🌸</h1>
+    </center>
+  </div>
+
+  <!-- Sparkle Divider -->
+  <div class="sparkle-divider"></div>
+
+  <center>
+    <img src="ihmaa.jpg" height="200" width="1000" style="border-radius:20px; box-shadow:0 4px 10px rgba(0,0,0,0.1); margin-top:15px;">
+    
+    <marquee behavior="scroll" direction="right" onmouseover="this.stop();" onmouseout="this.start();" style="margin-top:10px;">
+      <font color="#C71585"><b>Click the link below to visit each page 💕</b></font>
+    </marquee>
+
+    <table>
+      <tr align="center">
+  <td><a href="homepage.html" target="contentframe">🏠 Home Page</a></td>
+  <td><a href="msword.html" target="contentframe">📘 MS Word</a></td>
+  <td><a href="msexcel.html" target="contentframe">📊 MS Excel</a></td>
+  <td><a href="msppt.html" target="contentframe">📽️ MS PowerPoint</a></td>
+  <td><a href="mspub.html" target="contentframe">📰 Publisher</a></td>
+  <td><a href="basichtml.html" target="contentframe">💻 Basic HTML Tag</a></td>
+</tr>
+
+<tr align="center">
+  <td><a href="emtech.html" target="contentframe">🤖 Empowerment Technology</a></td>
+  <td><a href="mil.html" target="contentframe">💡 Media Information Literacy</a></td>
+  <td><a href="js.html" target="contentframe">⚙️ Java Script</a></td>
+  <td><a href="pga.html" target="contentframe">🖼️ Photo Gallery</a></td>
+  <td><a href="mp31.html" target="contentframe">🎧 MP3</a></td>
+  <td><a href="mp41.html" target="contentframe">🎬 MP4</a></td>
+</tr>
+
+<tr align="center">
+  <td><a href="slideshow.html" target="contentframe">📽️ Slide Show</a></td>
+</tr>
+
+      </tr>
+    </table>
+
+    <p><iframe name="contentframe" src="homepage.html"></iframe></p>
+  </center>
+
+  <!-- Floating hearts script -->
+  <script>
+    const hearts = document.querySelector('.hearts');
+    setInterval(() => {
+      const heart = document.createElement('span');
+      heart.textContent = ['💖','💗','💞','💘','💝'][Math.floor(Math.random()*5)];
+      heart.style.left = Math.random() * 100 + '%';
+      heart.style.fontSize = Math.random() * 20 + 10 + 'px';
+      hearts.appendChild(heart);
+      setTimeout(() => heart.remove(), 6000);
+    }, 1000);
+  </script>
+</body>
+</html>

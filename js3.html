@@ -1,0 +1,87 @@
+<html>
+
+<head>
+ <title>Javascript Quiz Lesson 6</title>
+
+ <script type="text/javascript">
+  function score()
+  {
+      //declare variable s; s is equal to zero
+      var s = 0;
+      
+      //check the answer in item 1
+      if (q.answer1.value == "Math")
+      {
+        s = s + 1 		//add 1 to variable s
+      }
+
+      //check the answer in item 2
+      if (q.answer2.value == "b")
+      {
+  		  s = s + 1		//add 1 to variable s
+      }
+
+      //check the answer in item 3
+      if (q.answer3.value == "prompt()")
+      {
+        s = s + 1		//add 1 to variable s
+      }
+ 
+      //check the answer in item 4; && means "and"
+      if (q.choicesSet2a.checked==false && q.choicesSet2b.checked==false && q.choicesSet2c.checked==true && q.choicesSet2d.checked==true)
+      {
+        s = s + 1		//add 1 to variable s
+      }
+
+      //display the score
+      alert("Your score is " + s)
+  }
+ </script>
+
+</head>
+
+<body>
+
+<p>
+  Javascript Quiz<br />
+
+  <form name="q">
+
+    <ol>
+      <li>The round() method is used to round a number to its nearest integer.<br />
+        In what Javascript object does it belong to? (case-sensitive)<br />
+        answer: <input type="text" name="answer1" value ="" />
+      </li>
+
+      <li>Which of the following methods will insert text or HTML elements into the page?<br />
+        <input type="radio" name="choicesSet1" onclick="q.answer2.value='a'" />alert()<br />
+        <input type="radio" name="choicesSet1" onclick="q.answer2.value='b'" />document.write()<br />
+        <input type="radio" name="choicesSet1" onclick="q.answer2.value='c'" />document.push()
+        <input type="hidden" name="answer2" value="" />
+      </li>
+    
+      <li>Javascript can ask users to enter data.  What method is used to do this? <br />
+        <select name="answer3">
+          <option value=""></option>
+          <option value="alert()">alert()</option>
+          <option value="confirm()">confirm()</option>
+          <option value="prompt()">prompt()</option>
+        </select>
+      </li>
+
+      <li>Which of the following methods are used to get the numeric equivalent of a string?<br />
+        Select two.<br />
+        <input type="checkbox" name="choicesSet2a" />val()<br />
+        <input type="checkbox" name="choicesSet2b" />convert()<br />
+        <input type="checkbox" name="choicesSet2c" />parseInt()<br />
+        <input type="checkbox" name="choicesSet2d" />parseFloat()
+      </li>
+    </ol>
+
+    <input type="button" value=" Submit " onclick="score();" />
+  </form>
+
+</p>
+
+</body>
+</html>
