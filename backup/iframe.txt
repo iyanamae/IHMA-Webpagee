@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>IHMA Webpage</title>
+	</head>
+
+	<body>
+
+	<center> 
+	<img src="ihmaa.jpg" height=200 width=1300>
+	</center>
+	<body bgcolor=77C6C2>
+	<hr size="2", width="1000">
+	<marquee behavior="scroll" direction="right" onmouseover="this.stop();"onmouseout=this.start();">Just Click the <b> <font color="purple">link</font> below to go to that
+<font color="white">Page</font></marquee>
+<center>
+<div>
+	<a target="contentframe"href="homepage.html"><b>|Home Page|</b></a>
+	<a target="contentframe"href="msword.html"><b>|MS Word Activity|</b></a>
+	<a target="contentframe"href="msexcel.html"><b>|MS Excel Activity|</b></a>
+	<a target="contentframe"href="msppt.html"><b>|MS PowerPoint Activity|</b></a>
+	<a target="contentframe"href="mspub.html"><b>|Publisher Activity|</b></a>
+	<a target="contentframe"href="basichtml.html"><b>|Basic HTML Tag|</b></a>
+	<iframe name="contentframe" width="100%" height="90%" src="homepage.html"></iframe>
+
+</div>
+</center>
+</body>
+</html>

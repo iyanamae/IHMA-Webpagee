@@ -1,0 +1,29 @@
+<html>
+<head>
+  <title>MS Publisher Activity</title>
+</head>
+<body bgcolor="white">
+
+  <center>
+    <h1>Microsoft Publisher Activity</h1>
+  </center>
+
+  <table width="100%" height="100%">
+    <tr>
+ 
+      <td width="15%" valign="top" bgcolor="#6A1B9A">
+        <center>
+          <h2 style="color:white">Table of Contents</h2>
+          <a href="lesson8.pdf" target="lessonframe"><font color="white">Lesson 8</font></a><br>
+        </center>
+      </td>
+
+ 
+      <td width="100%" bgcolor="#E1BEE7">
+        <iframe name="lessonframe" width="100%" height="600"></iframe>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>

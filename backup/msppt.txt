@@ -1,0 +1,28 @@
+<html>
+<head>
+  <title>MS PowerPoint Activity</title>
+</head>
+<body bgcolor="white">
+
+  <center>
+    <h1>Microsoft PowerPoint Activity</h1>
+  </center>
+
+  <table width="100%" height="100%">
+    <tr>
+
+      <td width="15%" valign="top" bgcolor="#E65100">
+        <center>
+          <h2 style="color:white">Table of Contents</h2>
+          <a href="lesson7.pdf" target="lessonframe"><font color="white">Lesson 7</font></a><br>
+        </center>
+      </td>
+
+      <td width="100%" bgcolor="#FFE0B2">
+        <iframe name="lessonframe" width="100%" height="600"></iframe>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>

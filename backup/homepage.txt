@@ -1,0 +1,40 @@
+<html>
+<head>
+  <title>Home Page</title>
+</head>
+<body bgcolor="white">
+
+  <center>
+    <h1>Welcome to the IHMA Home Page</h1>
+
+      <div style="background-color: FCE1B6; padding: 20px; width: 80%; 
+                border-radius: 20px; margin-top: 20px;">
+
+      <h2>Our School, Our Home</h2>
+
+      <div style="background-color: white; padding: 15px; margin: 10px; border-radius: 10px;">
+        <h3>Mission</h3>
+        <p>To create and maintain a student-centered learning environment where reaching and learning are purpose-driven and students are assisted towards the development of personal and social responsibilty.</p>
+      </div>
+
+      <div style="background-color: white; padding: 15px; margin: 10px; border-radius: 10px;">
+        <h3>Vision</h3>
+        <p>A Marian educational Institution committed to a holistic education experience, enabling, inspiring students to lead lives of choice, purpose and service.</p>
+      </div>
+
+    
+      <div style="background-color: white; padding: 15px; margin: 10px; border-radius: 10px;">
+        <h3>Core Values</h3>
+        <p>D - iscipline<br>
+	M - agnanimity<br>
+	A - ttentiveness<br>
+	I - tegrity<br>
+	A - ltruism<br>
+	N - ationalism</p>
+      </div>
+
+    </div>
+  </center>
+
+</body>
+</html>

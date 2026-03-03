@@ -1,0 +1,30 @@
+<html>
+<head>
+  <title>MS Excel Activity</title>
+</head>
+<body bgcolor="white">
+
+  <center>
+    <h1>Microsoft Excel Activity</h1>
+
+  <table width="100%" height="100%">
+    <tr>
+      
+      <td width="15%" valign="top" bgcolor="2E7D32">
+        <center>
+          <h2 style="color:white">Table of Contents</h2>
+	  <a href="lesson4.htm" target="lessonframe"><font color="white">Lesson 4</font></a><br>
+          <a href="lesson5.htm" target="lessonframe"><font color="white">Lesson 5</font></a><br>
+          <a href="lesson6.htm" target="lessonframe"><font color="white">Lesson 6</font></a><br>
+        </center>
+      </td>
+
+      
+      <td width="100%" bgcolor="C8E6C9">
+        <iframe name="lessonframe" width="100%" height="600"></iframe>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
