@@ -1,0 +1,118 @@
+<html>
+<head>
+ 	<title>Membership Registration Lesson 8</title>
+ 	
+ 	<script type="text/javascript">
+
+ 	  function validate()
+ 	  { 
+ 	    var lname = f.lastname.value
+ 	    var fname = f.firstname.value
+     	 var gender = f.gender.value
+ 	    var email = f.email.value
+ 	    var month = f.month.value
+ 	    var date = f.date.value
+ 	    var year = f.year.value
+ 	    
+ 	    if (lname=="")      					// if empty
+ 	    {
+ 	        alert("Please enter a value for the last name")
+ 	        return false    					// abort
+      }
+      
+ 	    if (fname=="")      					// if empty
+ 	    {
+ 	        alert("Please enter a value for the first name")
+ 	        return false    					// abort
+      }      
+      
+      
+      if (gender=="")      					// if empty
+ 	    {
+ 	        alert("Please select your gender")
+ 	        return false    					// abort
+      }
+      
+      <!-- complete the validation script -->
+ 	    
+ 	    
+ 	    f.submit()          					// submit the form
+
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <p align="center">
+		<b>MEMBERSHIP REGISTRATION<br /><br /></b>
+		Please enter the member’s details below
+
+  <form name="f" action="register.asp" method="get">
+    Lastname <input type="text" value="" name="lastname" /><br />
+    Firstname <input type="text" value="" name="firstname" /><br />
+
+    <input type="hidden" name="gender" />
+        Gender <input type="radio" name="genderbutton"
+                  onclick="f.gender.value='M'" /> Male 
+	             <input type="radio" name="genderbutton"
+                  onclick="f.gender.value='F'" /> Female 
+    <br /><br />
+
+    Email <input type="text" value="" name="email" /><br /><br />
+
+    Birthdate 
+    <select name="month">
+  	 <option value=""></option>
+	   <option value="1">January</option>
+  	 <option value="2">February</option>
+  	 <option value="3">March</option>
+  	 <option value="4">April</option>
+  	 <option value="5">May</option>
+  	 <option value="6">June</option>
+  	 <option value="7">July</option>
+  	 <option value="8">August</option>
+  	 <option value="9">September</option>
+  	 <option value="10">October</option>
+  	 <option value="11">November</option>
+  	 <option value="12">December</option>
+    </select>
+
+    <!-- DATE SECTION -->
+    <select name="date">
+	   <option value=""></option>
+
+      <script type="text/javascript">	
+      for (c=1;c<=31;c++)
+      {
+  	 	  document.write("<option value='")
+  		  document.write(c,"'>", c, "</option>")
+      }
+      </script>
+   
+    </select>
+
+    <!--YEAR SECTION -->
+    <select name="year">
+	     <option value=""></option>
+
+       <script type="text/javascript">	
+  	   for (c=1974;c<=2016;c++)
+	     {
+		    document.write("<option value=’")
+		    document.write(c,"’>", c, "</option>")
+	     }
+       </script>
+    
+    </select>
+
+
+    <br /><br />
+    <input type="reset" value="Reset" />
+    <input type="button" value="Save" onclick="validate()" />
+  </form>
+</p> 
+
+</body>
+</html>
